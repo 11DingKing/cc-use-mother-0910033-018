@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "product": "生产领料预留",
+  "source_context": "当前 GitHub 账号内通过正式容器验证的 Python 后端项目群",
+  "actors": [
+    "采购计划员",
+    "供应商",
+    "质量工程师",
+    "仓储管理员"
+  ],
+  "states": [
+    "草拟",
+    "待确认",
+    "已下达",
+    "履行中",
+    "已关闭"
+  ],
+  "invariants": [
+    "多物料原子预留",
+    "批次选择策略",
+    "数量守恒校验",
+    "孤儿预留恢复"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "0910033-018-A",
+      "actor": "采购计划员",
+      "state": "草拟"
+    },
+    {
+      "case_id": "0910033-018-B",
+      "actor": "仓储管理员",
+      "state": "待确认"
+    }
+  ],
+  "tags": [
+    "material-reservation",
+    "production-allocation"
+  ]
+}

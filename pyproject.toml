@@ -1,0 +1,6 @@
+[project]
+name = "domain-contract-0910033-018"
+version = "0.1.0"
+description = "生产领料预留的领域约定与校验工具"
+requires-python = ">=3.11"
+dependencies = []
