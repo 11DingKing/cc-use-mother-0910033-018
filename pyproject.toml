@@ -1,6 +1,16 @@
 [project]
 name = "domain-contract-0910033-018"
-version = "0.1.0"
-description = "生产领料预留的领域约定与校验工具"
+version = "0.2.0"
+description = "生产领料预留的领域约定、校验工具与预留服务端"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+reservation-server = "reservation_service.api:run"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
